@@ -23,16 +23,6 @@ function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
   return Math.floor( Math.sqrt(sum) / 2 )
 }
 
-//Refactored
-function predictAge(age1, age2, age3, age4, age5, age6, age7, age8){
-  let age = [age1, age2, age3, age4, age5, age6, age7, age8]
-  let sum = 0
-  for(let i = 0; i < age.length; i++){
-    sum += age[i] * age[i]
-  }
-  return Math.floor( Math.sqrt(sum) / 2)
-}
-
 // Refactored ES6JS
 function predictAge(age1, age2, age3, age4, age5, age6, age7, age8){
   let age = [age1, age2, age3, age4, age5, age6, age7, age8]
